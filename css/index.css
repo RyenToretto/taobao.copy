@@ -1,0 +1,946 @@
+/*
+ * 针对不同浏览器或不同版本的浏览器会有不同的写法，会添加相应的前缀。
+ * 
+ * 　　注意：冒号与双冒号的问题，还有是否需要加上input
+ * 
+ * 　　    1、WebKit, Blink, Edge浏览器等需要带上 -webkit- 前缀，且是双冒号，写的时候还要带上input
+ * 
+ * 　　    2、针对火狐浏览器则有两种写法，一种是针对低版本的，一种是针对高版本的，二者都需要带上-moz-前缀。
+ * 　　       	要点1：火狐低版本的使用冒号（：），而高版本的使用双冒 号（：：）；
+ * 				要点2：火狐浏览器不需要像webkit内核那样要带上input。
+ * 
+ * 　　		3、由于placeholder属性只在IE10+才支持，
+ * 				因此，针对IE10、IE11的写法是加上 -ms- 前缀，使用的是冒号（：），需要带上input
+ */
+
+img {
+	border: 0 none;
+}
+
+input::-webkit-input-placeholder{
+    color: #9c9c9c;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #9c9c9c;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #9c9c9c;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #9c9c9c;
+}
+
+body {
+	background: #f1f1f1;
+}
+
+li a {
+	float: left;
+}
+
+.centerHeart {
+	width: 1190px;
+	margin: 0px auto;
+}
+.colorf22e00 {
+	color: #f22e00;
+}
+
+.colorfc4400{
+	color: #fc4400;
+}
+
+.colorf40 {
+	color: #f40 !important;
+}
+
+/******************* 顶部导航部分 **********************************************/
+.header_wrap {
+	width: 100%;
+	background: #f5f5f5;
+	border-bottom:1px solid #eee;
+}
+
+.header_wrap .header_nav {
+	height: 35px;
+}
+/******************* 顶部左侧 导航文字*********************/
+.list_left {
+	float: left;
+	margin-left: 6px;
+}
+
+.list_left li {
+	float: left;
+	line-height: 35px;
+}
+
+.list_left .list_left_2 {
+	margin: 0px 21px 0px 5px;
+}
+
+.list_left li a {
+	display: block;
+	height: 35px;
+}
+
+/****************** 顶部右侧 导航文字 **********************/
+.list_right {
+	float: right;
+}
+.list_right .right_1,
+.list_right .right_2 {
+	float: left;
+}
+
+.list_right .yline {
+	height: 12px;
+	
+	border-left: 1px solid #e7e1dd;
+	border-right: 1px solid #e1e7f5;
+	
+	margin-top: 12px;
+	float: left;
+}
+
+.list_right .right_1 {
+	padding-right: 19px;
+}
+
+.list_right .right_1 li {
+	float: left;
+	margin-left: 13px;
+	line-height: 35px;
+}
+
+.list_right .right_2 {
+	padding-right: 8px;
+}
+
+.list_right .right_2 li {
+	float: left;
+	margin-left: 11px;
+	line-height: 35px;
+}
+
+.list_right .right_1 li a,
+.list_right .right_2 li a {
+	display: block;
+	height: 35px;
+}
+
+.list_right .right_1 li img,
+.list_right .right_2 li img {
+	display: inline;
+	
+	_margin-top: 10px;
+}
+
+.list_right img {
+	position: relative;
+	top: 2px;
+	left: 0px;
+}
+
+/******************* 搜索部分背景**********************************************/
+
+.logo_search_wrap {
+	background-color: #fff;
+}
+
+.logo_search_wrap .logo_search {
+	height: 164px;
+}
+
+/******************* logo 部分 *********************/
+.log_box {
+	margin: 38px 0px 0px 22px;
+	float: left;
+}
+
+.log_box a {
+	width: 145px;
+	height: 58px;
+}
+
+/******************* 搜索框 *********************/
+.search_outer {
+	float: left;
+	margin: 30px 0px 0px 98px;
+}
+
+.search_outer .search_box .search_form ,
+.search_outer .search_box .level_search {
+	float: left;
+}
+
+.search_outer .search_box .search_form input{
+	width: 500px;
+	height: 34px;
+	line-height: 34px;
+	
+	_background-attachment: fixed;
+	text-indent: 13px;
+	
+	border: 3px solid #ff4200;
+	
+	/* 
+	 * border：0; 边框宽度为0， 但是类型可能是实线。
+	 * border：none; 从类型角度说明无边框，（而不是实线、虚线） 
+	 */
+	border-right: 0 none;
+	 
+	outline: none;
+	float: left;
+}
+
+.search_outer .search_box .search_form button{
+	width: 122px;
+	height: 40px;
+	
+	background: #ff4200;
+	color: #fff;
+	font-size: 18px;
+	font-family: tahoma;
+	
+	border: 3px solid #ff4200;
+	outline: none;
+	float: left;
+}
+
+.search_outer .search_box .level_search {
+	display: block;
+	width: 24px;
+	height: 40px;
+	
+	margin-left: 9px ;
+}
+/******************* 搜索框 上面的选项*********************/
+.search_outer .search_top li {
+	float: left;
+}
+
+.search_outer .search_top li a{
+	display: block;
+	width: 50px;
+	height: 25px;
+	
+	line-height: 25px;
+	text-align: center;
+}
+
+.choice_top{
+	background-color: #ff4400;
+	color: #fff !important;
+	font-weight: 700;
+}
+/******************* 搜索框下面的 导航 *********************/
+.search_nav {
+	margin-top: 12px;
+	width: 625px;
+}
+
+.search_nav li{
+	float: left;
+	margin-right: 9px;
+}
+
+.search_nav li a{
+	display: block;
+	height: 12px;
+	line-height: 12px;
+}
+
+.search_nav .more_nav {
+	float: right;
+	margin-right: 0px;
+}
+
+/******************* 二维码 盒子*********************/
+.logo_search {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.scanf_box {
+	float: right;
+	
+	width: 94px;
+	height: 112px;
+	border: 1px solid #eee;
+	position: absolute;
+	right: 0px;
+	top: 33px;
+	
+	background: #fff;
+}
+
+.scanf_box .img_x {
+	width: 18px;
+	height: 18px;
+	
+	color: #cfcfd5;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	border: 1px solid #eee;
+	border-right: 0px none;
+	
+	position: absolute;
+	top: -1px;
+	left: -20px;
+}
+
+.scanf_box h3 {
+	/*height: 12px;*/    /* ie6 中给 h3 加高度会变形 */
+	line-height: 12px;
+	
+	font-size: 12px;
+	margin: 6px 0px 5px 0px;
+	text-align: center;
+}
+
+.scanf_box img {
+	display: block;
+	width: 80px;
+	height: 80px;
+	
+	margin: 0 auto;
+}
+
+/******************* 主体左侧 盒子设置**********************************************/
+.main_outer .main_left {
+	float: left;
+	width: 190px;
+	background: #ff6537;
+}
+
+/******************* 主体左侧 主题市场 *********************/
+.theme_title {
+	width: 180px;
+	height: 40px;
+}
+
+.theme_title .theme_word h3{
+	height: 14px;
+	line-height: 14px;
+	
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	
+	float: left;
+	margin: 10px 0px 0px 9px;
+}
+
+.theme_list {
+	height: 14px;
+	line-height: 14px;
+	
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	
+ 	float: right;
+ 	margin-top: 10px;
+}
+
+/******************* 主体左侧 导航栏 *********************/
+.theme_choices {
+	height: 475px;
+}
+
+.choices_box {
+	margin-left: 10px;
+}
+
+.nav_ico {
+	color: #ff905b;
+}
+
+.choices_box>li {
+	height: 16px;
+	margin-bottom: 14px;
+}
+
+.choices_box .bottom11_floor {
+	margin-bottom: 11px;
+}
+
+.choices_box .choices_floor{
+	width: 170px;
+}
+	
+.choices_box .choices_floor li {
+	float: left;
+	
+	color: #fff;
+	line-height: 16px;
+	font-weight: 700;
+	
+	margin-left: 3px;
+}
+
+.choices_box .choices_floor li a{
+	display: block;
+	height: 16px;
+	
+	color: #fff;
+}
+
+.choices_box .choices_floor .more_nav {
+	float: right;
+}
+/******************** 主体左侧 下方广告********************/
+.theme_adv {
+	height: 40px;
+}
+
+.theme_adv a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.theme_adv a img{
+	width: 190px;
+}
+
+/******************** 主体的 轮播图 到最左边********************/
+.main_outer .main_right {
+	float: right;
+	width: 990px;
+	height: 555px;
+}
+/******************** 主体的 导航部分 公共设置 ********************/
+.main_nav {
+	height: 44px;
+}
+
+.nav_padding {
+	padding: 4px 0px 0px 3px;
+}
+
+.main_nav_left,
+.main_nav_center,
+.main_nav_right{
+	float: left;
+}
+
+.main_nav li{
+	float: left;
+	line-height: 28px;
+}
+
+.main_nav li a{
+	display: block;
+	height: 28px;
+	
+	font-weight: 700;
+}
+
+/******************** 主体的 left 导航部分 ********************/
+.main_nav_left li {
+	margin-right: 6px;
+}
+
+.main_nav_left li a {
+	color: #f40;
+	font-size: 16px;
+	
+	padding: 0 8px;
+}
+
+.main_nav_left li a:hover {
+	color: #fff;
+	background: #f40;
+	border-radius: 13px;
+}
+
+/******************** 主体的 center 和 right 导航部分 ********************/
+.main_nav_center {
+	margin-left: 10px;
+}
+
+.dividing_line {
+	color: #e0ddde;
+}
+
+.main_nav_center li,
+.main_nav_right li{
+	margin-right: 7px;
+}
+
+.main_nav_center li a,
+.main_nav_right li a {
+	color: #3c3c3c;
+	font-size: 14px;
+	
+	padding: 0 4px;
+}
+
+.main_nav_center li a:hover,
+.main_nav_right li a:hover {
+	color: #fff;
+	background: #f40;
+	border-radius: 13px;
+}
+
+/******************************** 主体部分 左边轮播图盒子 *********************************/
+.content_left {
+	width: 690px;
+	float: left;
+}
+
+.content_left_top {
+	height: 280px;
+}
+
+.content_left_bottom {
+	height: 231px;
+}
+
+/******************** 上边轮播图部分 ********************/
+.content_left_top .banner_top {
+	float: left;
+	width: 520px;
+	height: 280px;
+	
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.banner_five li {
+	display: none;
+}
+
+.banner_five .five_cur_show {
+	display:block;
+}
+
+.banner_top .pre_pho_btn ,
+.banner_top .next_pho_btn {
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	
+	width: 24px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.banner_top .pre_pho_btn:hover,
+.banner_top .next_pho_btn:hover {
+	background: rgba(0,0,0,0.5);
+}
+
+.banner_top .next_pho_btn {
+	right: 0px;
+}
+
+.banner_top .banner_five_btn {
+	position: absolute;
+	top: 252px;
+	left: 228px;
+	
+	background: rgba(255,255,255,0.3);
+	border-radius: 6px;
+	
+	float: left;
+}
+
+.banner_top .banner_five_btn li {
+	float: left;
+	cursor: pointer;
+	
+	width: 9px;
+	height: 9px;
+	background: #b7b7b7;
+	margin:2px;
+	border-radius: 50%;
+}
+
+.banner_top .banner_five_btn li:hover,
+.banner_top .banner_five_btn .cur_photo_btn {
+	background: #f40;
+}
+/******************** 上边热卖图部分 ********************/
+.content_left_top  .hot_sale_top {
+	width: 160px;
+	height: 280px;
+	
+	float: right;
+}
+
+/******************** 下边轮播图部分 ********************/
+.banner_bottom {
+	float: left;
+	width: 520px;
+}
+
+.banner_title {
+	height: 29px;
+}
+
+.banner_title .banner_title_left {
+	width: 105px;
+	height: 17px;
+	
+	background: url(../img/tmall.gif) no-repeat -4px 0px;
+	border-bottom: 2px solid #000;
+	
+	margin-top: 10px;
+	float: left;
+}
+
+.banner_title .banner_title_right {
+	width: 415px;
+	height: 17px;
+	
+	border-bottom: 2px solid #c12c26;
+	
+	margin-top: 10px;
+	float: right;
+}
+
+.cat_have_to{
+	float: right;
+	margin-top: 1px;
+	
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+}
+
+.cat_hot_day{
+	float: left;
+	margin: 1px 0px 0px 11px;
+	
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+}
+
+.cat_count{
+	float: right;
+}
+
+.banner_six {
+	width: 520px;
+	height: 202px;
+	
+	background: #fff;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.banner_six_left{
+	margin: 23px 0px 0px 5px;
+	float: left;
+}
+
+.banner_six_left li,
+.banner_six_right li {
+	display: none;
+}
+
+.banner_six_left .five_left_show,
+.banner_six_right .five_right_show {
+	display:block;
+}
+
+.banner_six_right{
+	margin: 23px 10px 0px 0px;
+	float: right;
+}
+
+.banner_six .six_pre_btn,
+.banner_six .six_next_btn {
+	width: 24px;
+	height: 36px;
+	
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -18px;
+	
+	background: rgba(0,0,0,0.3);
+	
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 36px;
+}
+
+.banner_six .six_pre_btn:hover,
+.banner_six .six_next_btn:hover {
+	background: rgba(0,0,0,0.5);
+}
+
+.banner_six .six_next_btn {
+	left: auto;
+	right: 0px;
+}
+
+/******************** 下边特卖图部分 ********************/
+.content_left_bottom .specia_sale_bottom {
+	float: right;
+	
+	height: 231px;
+}
+
+.content_left_bottom .specia_sale_bottom .specia_sale {
+	height: 30px;
+	
+	color: #a1a1a1;
+	font-size: 12px;
+	
+	_margin-left: 10px;
+}
+
+.content_left_bottom .specia_sale_bottom .specia_sale span{
+	display: block;
+	
+	height: 12px;
+	line-height: 12px;
+	margin-top: 13px;
+}
+
+.content_left_bottom .specia_sale_bottom a {
+	width: 160px;
+	height: 200px;
+	
+	float: right;
+}
+/******************************** 主体部分 右边个人导航*********************************/
+.content_right {
+	float: right;
+	width: 290px;
+	
+	background: #fff url(../img/member-bg.jpg) no-repeat 0px 0px;
+}
+
+.content_right_top {
+	height: 167px;
+}
+
+.content_right_top .user_head{
+	width: 60px;
+	height: 60px;
+	
+	margin: 15px auto 0px;
+}
+
+.content_right_top .user_head img{
+	width: 60px;
+	height: 60px;
+	
+	border-radius: 50%;
+}
+
+.content_right_top .user_hi {
+	height: 12px;
+	
+	line-height: 12px;
+	text-align: center;
+	
+	margin-top: 4px;
+}
+
+.content_right_top .user_nav {
+	width: 187px;
+	height: 16px;
+	
+	margin: 4px auto 0px;
+}
+
+.content_right_top .user_nav img{
+	width: 16px;
+	height: 16px;
+}
+
+.content_right_top .user_nav li {
+	float: left;
+	margin-right: 5px;
+	
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+.content_right_top .user_nav .remove5px {
+	margin-right: 0px;
+}
+
+.content_right_top .user_btns {
+	width: 256px;
+	height: 25px;
+	
+	margin: 9px 0px 0px 15px;
+}
+
+.content_right_top .user_btns li {
+	float: left;
+	
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	
+	background: #f40;
+}
+
+.content_right_top .user_btns .reg_btn {
+	margin: 0px 7px;
+}
+
+.content_right_top .user_btns li a{
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.content_right_top .user_btns .login_btn a{
+	width: 92px;
+}
+
+.content_right_top .user_btns .reg_btn a{
+	width: 75px;
+}
+
+.content_right_top .user_btns .shop_btn a{
+	width: 75px;
+}
+/******************** 公告 规则 论坛 安全 公益 ********************/
+.content_right_center {
+	height: 109px;
+	
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+	
+	background: #fff;
+}
+
+.taobao_posts {
+	height: 20px;
+	margin: 15px 0px 0px 16px;
+}
+
+.taobao_posts li {
+	float: left;
+	
+	height: 18px;
+	line-height: 18px;
+	
+	margin-right: 16px;
+}
+
+.taobao_posts .last_post {
+	margin-right: 0px;
+}
+
+.taobao_posts .active_post {
+	border-bottom: 2px solid #f40;
+	font-weight: 700;
+}
+
+.taobao_posts li a{
+	display: block;
+	width: 39px;
+	height: 18px;
+	
+	color: #3c3c3c;
+	line-height: 18px;
+	text-align: center;
+}
+
+.taobao_posts li a:hover{
+    color: #f40;
+}
+
+.top_news {
+	height: 12px;
+	line-height: 12px;
+	margin: 17px 0px 0px 20px;
+}
+
+.bottom_news {
+	height: 12px;
+	line-height: 12px;
+	margin: 13px 0px 0px 20px;
+}
+
+.bottom_news a{
+	color: #3c3c3c;
+}
+
+.bottom_left_news {
+	margin-right: 12px;
+}
+/******************** 4 x 3 导航格子 布局********************/
+.content_right_bottom {
+	height: 231px;
+	
+	background: #fff;
+}
+
+.row1_nav li,
+.row2_nav li,
+.row3_nav li {
+	float: left;
+	
+	border-right: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.row1_nav .col4_nav {
+	border-right: 0px none;
+}
+
+.col1_nav a{
+	width: 71px;
+	height: 66px;
+}
+
+.col2_nav a,
+.col3_nav a,
+.col4_nav a {
+	width: 72px;
+	height: 66px;
+}
+
+.row2_nav .col4_nav a,
+.row3_nav .col4_nav a{
+	width: 71px;
+}
+
+.row3_nav .col1_nav a,
+.row3_nav .col2_nav a,
+.row3_nav .col3_nav a,
+.row3_nav .col4_nav a {
+	height: 65px;
+}
+
+/******************** 格子里样式 ********************/
+.twelve_nav img {
+	width: 24px;
+	
+	margin: 11px auto 9px;
+}
+
+.twelve_nav h3 {
+	color: #6c6c6c;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+}

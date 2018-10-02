@@ -1,0 +1,57 @@
+/*css初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,button,
+textarea,p,blockquote,th,td {
+    margin: 0;
+    padding:0; 
+}
+
+body {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+    color: #6c6c6c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;    /*当前继承字号百分比*/
+}
+
+em,strong,i,b,s,del,u,ins {
+    font-style: normal; 
+    font-weight: normal;
+    text-decoration: none;
+}
+
+img { 
+    display: block;
+}
+
+ol,ul,li { 
+    list-style: none; 
+}
+
+table {
+    border-collapse: collapse;    /*设置1px表格*/
+}
+
+.clearfix {
+    *zoom:1;    /*兼容Ie6*/
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+a{
+    color: #6c6c6c;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f40;
+}
