@@ -50,6 +50,10 @@ li a {
 	color: #fc4400;
 }
 
+.colorf2725b{
+	color: #f2725b;
+}
+
 .colorf40 {
 	color: #f40 !important;
 }
@@ -127,19 +131,6 @@ li a {
 .list_right .right_2 li a {
 	display: block;
 	height: 35px;
-}
-
-.list_right .right_1 li img,
-.list_right .right_2 li img {
-	display: inline;
-	
-	_margin-top: 10px;
-}
-
-.list_right img {
-	position: relative;
-	top: 2px;
-	left: 0px;
 }
 
 /******************* 搜索部分背景**********************************************/
@@ -253,7 +244,15 @@ li a {
 
 .search_nav .more_nav {
 	float: right;
+	display: block;
+	height: 12px;
+	line-height: 12px;
 	margin-right: 0px;
+}
+
+.search_nav .more_nav .iconfont{
+	position: relative;
+	top: 1px;
 }
 
 /******************* 二维码 盒子*********************/
@@ -290,6 +289,10 @@ li a {
 	position: absolute;
 	top: -1px;
 	left: -20px;
+}
+
+.scanf_box .img_x:hover {
+	color: #f40;
 }
 
 .scanf_box h3 {
@@ -338,12 +341,14 @@ li a {
 	height: 14px;
 	line-height: 14px;
 	
-	color: #fff;
-	font-size: 14px;
-	font-weight: 700;
-	
  	float: right;
  	margin-top: 10px;
+ 	cursor: pointer;
+}
+
+.theme_list .iconfont{
+	color: #fff;
+	font-size: 20px;
 }
 
 /******************* 主体左侧 导航栏 *********************/
@@ -355,7 +360,7 @@ li a {
 	margin-left: 10px;
 }
 
-.nav_ico {
+.choices_box .choices_floor a .iconfont {
 	color: #ff905b;
 }
 
@@ -391,6 +396,13 @@ li a {
 
 .choices_box .choices_floor .more_nav {
 	float: right;
+	font-weight: normal;
+	position: relative;
+	top: 2px;
+}
+
+.choices_box .choices_floor .more_nav a:hover {
+	/*color: #f40;*/
 }
 /******************** 主体左侧 下方广告********************/
 .theme_adv {
@@ -520,26 +532,26 @@ li a {
 	display:block;
 }
 
+.banner_top .pre_pho_btn:hover,
+.banner_top .next_pho_btn:hover {
+	background: rgba(0,0,0,0.5);
+}
+
 .banner_top .pre_pho_btn ,
 .banner_top .next_pho_btn {
+	width: 24px;
+	height: 36px;
 	position: absolute;
 	top: 50%;
 	margin-top: -18px;
 	
-	width: 24px;
-	height: 36px;
+	color: #fff;
+	font-size: 20px;
 	line-height: 36px;
 	text-align: center;
 	background: rgba(0,0,0,0.3);
 	
-	color: #fff;
-	font-size: 20px;
 	cursor: pointer;
-}
-
-.banner_top .pre_pho_btn:hover,
-.banner_top .next_pho_btn:hover {
-	background: rgba(0,0,0,0.5);
 }
 
 .banner_top .next_pho_btn {
@@ -548,24 +560,24 @@ li a {
 
 .banner_top .banner_five_btn {
 	position: absolute;
-	top: 252px;
-	left: 228px;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -5px;
 	
 	background: rgba(255,255,255,0.3);
 	border-radius: 6px;
-	
-	float: left;
 }
 
 .banner_top .banner_five_btn li {
-	float: left;
-	cursor: pointer;
-	
 	width: 9px;
 	height: 9px;
-	background: #b7b7b7;
-	margin:2px;
 	border-radius: 50%;
+	background-color: #b7b7b7;
+	margin:2px;
+	
+	cursor: pointer;
+	float: left;
+	
 }
 
 .banner_top .banner_five_btn li:hover,
@@ -580,7 +592,7 @@ li a {
 	float: right;
 }
 
-/******************** 下边轮播图部分 ********************/
+/******************** 下边轮播图的上方文字部分 ********************/
 .banner_bottom {
 	float: left;
 	width: 520px;
@@ -633,6 +645,7 @@ li a {
 	float: right;
 }
 
+/******************** 下边轮播图部分 ********************/
 .banner_six {
 	width: 520px;
 	height: 202px;
@@ -643,7 +656,7 @@ li a {
 	left: 0px;
 }
 
-.banner_six_left{
+.banner_six_left {
 	margin: 23px 0px 0px 5px;
 	float: left;
 }
