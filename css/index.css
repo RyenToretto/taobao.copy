@@ -98,6 +98,13 @@ li a {
     padding: 0px 4px 0px 12px;
 }
 
+.list_right a .collect,
+.list_right li span {
+    color: #9c9c9c;
+    position: relative;
+    top: 1px;
+}
+
 .list_right li {
     float: left;
     height: 35px;
@@ -110,7 +117,12 @@ li a {
 }
 
 .list_right .downable {
-    margin: 0px 5px 0px;
+    margin-right: 2px;
+    color: #f40;
+}
+
+.list_right .sitenav {
+    color: #f40;
 }
 
 /******************* 搜索部分背景**********************************************/
