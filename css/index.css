@@ -878,6 +878,10 @@ li a {
     color: #3c3c3c;
 }
 
+.bottom_news a:hover{
+    color: #f40;
+}
+
 .bottom_left_news {
     margin-right: 12px;
 }
@@ -932,9 +936,14 @@ li a {
     margin: 11px auto 9px;
 }
 
-.twelve_nav h3 {
+.twelve_nav a h3 {
     color: #6c6c6c;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
 }
+
+.twelve_nav ul li:hover h3{
+    color: #f40;
+}
+
