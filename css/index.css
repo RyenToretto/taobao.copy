@@ -301,7 +301,7 @@ li a {
 /******************* 主体左侧 主题市场 *********************/
 .theme_title {
 	width: 180px;
-	height: 40px;
+	height: 33px;
 }
 
 .theme_title .theme_word h3{
@@ -332,35 +332,34 @@ li a {
 
 /******************* 主体左侧 导航栏 *********************/
 .theme_choices {
-	height: 475px;
+	height: 482px;
 }
 
 .choices_box {
-	margin-left: 10px;
+	height: 480px;
 }
 
-.choices_box .choices_floor a .iconfont {
+.choices_box_li{
+	height: 30px;
+}
+
+.choices_box_li:hover {
+	background-color: #f94a14;
+}
+
+.choices_box .choices_floor span {
 	color: #ff905b;
-}
-
-.choices_box>li {
-	height: 16px;
-	margin-bottom: 14px;
-}
-
-.choices_box .bottom11_floor {
-	margin-bottom: 11px;
-}
-
-.choices_box .choices_floor{
-	width: 170px;
+	font-size: 18px;
+	
+	margin: 0px 6px 0px 10px;
+	float: left;
 }
 	
 .choices_box .choices_floor li {
 	float: left;
 	
 	color: #fff;
-	line-height: 16px;
+	line-height: 30px;
 	font-weight: 700;
 	
 	margin-left: 3px;
@@ -373,16 +372,19 @@ li a {
 	color: #fff;
 }
 
+.choices_box .choices_floor li a:hover{
+	text-decoration: underline;
+}
+
 .choices_box .choices_floor .more_nav {
 	float: right;
 	font-weight: normal;
 	position: relative;
 	top: 2px;
+	
+	margin-right: 10px;
 }
 
-.choices_box .choices_floor .more_nav a:hover {
-	/*color: #f40;*/
-}
 /******************** 主体左侧 下方广告********************/
 .theme_adv {
 	height: 40px;
