@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>03_taobao_mine</name>
+	<name>13_taobao_copy</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1538188065845</id>
+			<id>1538982472928</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
